@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Title Website -->
+    <title>Event  Hover Card NOT Hover</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ----- Style ----- -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+            background: rgb(38, 35, 35);
+        }
+        .containerCards {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: .5rem;
+        }
+        .cardsEvent {
+            background: rgb(60, 56, 56);
+            width: 7rem;
+            height: 7rem;
+            border-radius: .3rem;
+            transition: .35s;
+            cursor: pointer;
+            display: grid;
+            place-content: center;
+        }
+        .cardsEvent > i {
+            color: #c0c0c0;
+            font-size: 3rem;
+        }
+        .containerCards:hover > :not(:hover) {
+            opacity: .4;
+            transform: scale(0.9);
+        }
+
+        /* Medias Querys */
+        @media screen and (max-width: 1220px) {
+            .containerCards {
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .containerCards {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: .5rem;
+            }
+            .cardsEvent {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- ----- Components ----- -->
+    <div class="containerCards">
+        <div class="cardsEvent">
+            <i class='bx bxl-steam'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-discord-alt'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-instagram'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-facebook-circle'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-youtube'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-google'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-twitter'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-linkedin'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-twitch'></i>
+        </div>
+        <div class="cardsEvent">
+            <i class='bx bxl-pinterest'></i>
+        </div>
+    </div>
+</body>
+</html>

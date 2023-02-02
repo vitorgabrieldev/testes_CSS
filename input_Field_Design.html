@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Title Website -->
+    <title>Event  Hover Card NOT Hover</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ----- Style ----- -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+            background: rgb(38, 35, 35);
+        }
+        .container__main {
+            text-align: center;
+        }
+        .titleInput {
+            color: #Fefefe;
+            font-family: monospace;
+            letter-spacing: .1rem;
+        }
+
+        /* -------------------- Input 1 -------------------- */
+        .containerInput1 {
+            padding: 1rem 2rem 1rem 2rem;
+            border: #888 1px solid;
+            border-radius: 32px;
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+        }
+        .containerInput1 > i {
+            color: #9e9c9c;
+            font-size: 1.7rem;
+        }
+        .barletter1 {
+            width: 2px;
+            height: 1.4rem;
+            background: #4d4b4b;
+        }
+        .input1 {
+            background: transparent;
+            outline: none;
+            border: none;
+            color: #fefefe;
+            font-size: 1.3rem;
+        }
+        .containerInput1::before {
+            content: 'Email Address';
+            position: absolute;
+            background: rgb(38, 35, 35);
+            color: #e2dbdb;
+            font-family: monospace;
+            margin-top: -3.7rem;
+            padding: 0 .5rem 0 .5rem;
+            font-size: 1.3rem;
+        }
+        /* ------------------------------------------------- */
+
+        /* -------------------- Input 2 -------------------- */
+        .secondBarLetter {
+            background: rgb(4, 196, 254);
+        }
+        .secondsContainerInput {
+            border: rgb(4, 196, 254) 1px solid;
+        }
+        .secondsContainerInput > i {
+            color: rgba(6, 197, 255, 0.551);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!-- ----- Components ----- -->
+    <section class="container__main">
+        <!-- -------------------- Input 1 -------------------- -->
+        <h1 class="titleInput">Default</h1>
+
+        <div class="containerInput1">
+            <i class='bx bx-envelope'></i>
+            <div class="barletter1"></div>
+            <input type="text" placeholder="Example@xyz.com" class="input1">
+        </div>
+
+        <hr>
+
+        <!-- -------------------- Input 2 -------------------- -->
+        <h1 class="titleInput">Active</h1>
+
+        <div class="containerInput1 secondsContainerInput">
+            <i class='bx bx-envelope secondsIcons'></i>
+            <div class="barletter1 secondBarLetter"></div>
+            <input type="text" placeholder="Example@xyz.com" class="input1">
+        </div>
+        
+        <hr>
+
+        <!-- -------------------- Input 3 -------------------- -->
+        <h1 class="titleInput">Default</h1>
+
+        <div class="containerInput1">
+            <i class='bx bx-envelope'></i>
+            <div class="barletter1"></div>
+            <input type="text" placeholder="Example@xyz.com" class="input1">
+        </div>
+        
+        <hr>
+
+        <!-- -------------------- Input 4 -------------------- -->
+        <h1 class="titleInput">Default</h1>
+        
+        <div class="containerInput1">
+            <i class='bx bx-envelope'></i>
+            <div class="barletter1"></div>
+            <input type="text" placeholder="Example@xyz.com" class="input1">
+        </div>
+    </section>
+</body>
+</html>
